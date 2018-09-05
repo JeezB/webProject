@@ -1,18 +1,30 @@
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
+    width: 100%;
     overflow: hidden;
+    text-align: center;
+
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
+    color: white !important;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+
+}
+
+.topnav li{
+    display: inline-block;
+    margin-left: 0;
+    float: left;
+}
+
+.topnav ul{
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Change the color of links on hover */
@@ -38,7 +50,6 @@
 }
 
 .topnav a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -194,6 +205,7 @@
     position: relative;
     
     color: #212529;
+    margin-top: 400px;
 }
 
 /*login form*/
@@ -416,11 +428,12 @@ html {
     width: 100%;
     min-height: 1px;
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left: 0;
+    margin-left: 0 !important;
 }
 
 #myForm .h1, h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #myForm .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -441,7 +454,7 @@ html {
     -webkit-margin-after: 0.67em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    text-align: center;
+    margin-left: 2em;
 }
 
 #myForm form {
@@ -456,7 +469,7 @@ html {
 
 #myForm .form-control {
     display: block;
-    width: 45%;
+    width: 70%;
     height: calc(2.25rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
