@@ -7,3 +7,17 @@ function navbarToggler() {
     }
 } 
 
+
+
+new Vue({
+	el:'#test',
+	data:{
+		n:0
+	}
+
+});
+
+
+
+
+

@@ -73,25 +73,25 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 
@@ -147,26 +147,26 @@
 
 /* Style pour desktop */
 @media (min-width: 992px) {
-      .text-left-md, 
-      .text-left-sm, 
-      .text-left-xs { 
-          text-align: left; 
-      }
-      .text-center-md, 
-      .text-center-sm, 
-      .text-center-xs { 
-          text-align: center; 
-      }
-    .text-right-md, 
-    .text-right-sm, 
-    .text-right-xs { 
-        text-align: right;
-    }
-    .text-justify-md, 
-    .text-justify-sm, 
-    .text-justify-xs { 
-        text-align: justify;
-    }
+  .text-left-md, 
+  .text-left-sm, 
+  .text-left-xs { 
+      text-align: left; 
+  }
+  .text-center-md, 
+  .text-center-sm, 
+  .text-center-xs { 
+      text-align: center; 
+  }
+  .text-right-md, 
+  .text-right-sm, 
+  .text-right-xs { 
+    text-align: right;
+}
+.text-justify-md, 
+.text-justify-sm, 
+.text-justify-xs { 
+    text-align: justify;
+}
 }
 
 /* Style pour grand desktop */
@@ -226,7 +226,7 @@ body {
 
 /* Set a style for all buttons */
 button {
-    background-color: #01a9db;
+    background-color: #01a9db !important;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -316,7 +316,7 @@ span.psw {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
@@ -325,15 +325,20 @@ span.psw {
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 100%;
-    }
+     display: block;
+     float: none;
+ }
+ .cancelbtn {
+     width: 100%;
+ }
 }
 /*end login form*/
 
+#testregister .btn-success {
+    color: #fff;
+    background-color: #01a9db !important;
+    border-color: #01a9db !important;
+}
 
 *::before,
 *::after {
