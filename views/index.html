@@ -53,24 +53,23 @@
         </div>
 
 
-
-
         <div v-if='n==3'>
           <div class="container" id="testregister">
-            <h1 style="font-size: 20px">Please fill this little form so you can create your account</h1>
+            <h1>Create an account first </h1>
             <form id="sign" class="form-signUp" action="/createAcc" method="post" >
               <input type="email" name ="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
               <input type="password" name ="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-
-              <button type="submit" form="signUp" style="margin-top:30px" class="btn btn-lg btn-primary btn-block" value="Create account" v-on:click="n==3">Create account</button>
-              
-              
-
+              <button onclick="myFunction()" type="submit" form="signUp" value="Create account" v-on:click="n==3">Create account</button>
+            
+          <script>
+            function myFunction() {
+              alert("Well done! You have created an account. Now please sign in");
+            }
+          </script>
             </form>
             <a style="margin-top:30px"
-            class="btn btn-lg btn-primary btn-block" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Already member? Sign in!</a>
+            onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Already member? <u>Sign in ! </u></a>
           </div>
-
         </div>
         <!--login -->
         
@@ -85,7 +84,7 @@
               <input type="text" placeholder="Enter Username" name="email" required>
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="password" required>
-              <form id="log" action="/login" method="post">
+              <form id="log" action="/log" method="post">
                 <button type="submit" >Login</button>
               </form action ="/log">
               <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>

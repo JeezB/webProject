@@ -43,7 +43,7 @@ app.get('/login',function(req, res){
 });
 
 //SignUp
-app.get('/sign', function(req,res){
+app.get('/log', function(req,res){
 	res.sendFile(path.join(__dirname+'/views/index.html'));
 })
 //login test
@@ -86,9 +86,9 @@ app.post('/createAcc',function(req,res){
 			'email':mail,
 			'password':password
 		});
-		console.log("lourd");
 		fs.writeFileSync('users.json', JSON.stringify(userData, null, 2));
-	} catch (error){
+	alert("now please login");
+  } catch (error){
 		console.log(error);
 	}
 	res.sendFile(path.join(__dirname+'/views/index.html'));
